@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<title> Lập trình web (CT428) </title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<link rel="stylesheet" type="text/css" href="/buoi-4/bai-3//style.css" media="screen" />
+</head>
+
+<body>
+	<div id="wrap">
+		<div id="title">
+			<h1 class="title">Bài 3 - Buổi 4</h1>
+		</div>
+		<!--end div title-->
+		<div id="content">
+			<!--Nội dung trang web-->
+			<h1 class="sub-heading">Quảng cáo</h1>
+
+			<a href="http://www.hp.com" target="_blank" id="link">
+				<img id="laptopImg" class="laptop-img" src="/img/hp.jpg" height="300" width="300" onmouseover="pauseTimer()"
+					onmouseout="activateTimer()" />
+				<img src="/img/dell.jpg" hidden />
+				<img src="/img/acer.jpg" hidden />
+				<img src="/img/asus.jpg" hidden />
+			</a>
+
+			<div class="requirement">
+				<p>Yêu cầu:<br />
+					Có 4 hình ảnh của 4 công ty muốn quảng cáo đính kèm. Đầu tiên hiển thị một hình, cứ 2 giây thì thay hình ảnh
+					khác, xoay vòng giữa 4 hình ảnh đã cho.<br />
+					Khi người dùng rê chuột lên hình nào thì hình đó dừng lại không thay đổi để người dùng đọc thông tin về quảng
+					cáo đó,
+					khi nào người dùng rê chuột khỏi thì 2 giây sau mới cho hiển thị hình tiếp theo.<br />
+					Khi người dùng click vào hình nào thì liên kết đến website của hình đó ở cửa sổ mới.
+				</p>
+			</div>
+		</div>
+		<!--end div content-->
+		<div id="footer">
+			<p>Họ tên SV: Ngô Văn Thiện<br /> Email: thienb1607030@student.ctu.edu.vn</p>
+			<p><a href="/">Về trang chủ</a></p>
+		</div>
+		<!--end div footer-->
+	</div>
+	<!--end div wrap-->
+
+	<script>
+		// bai tap co nhieu cach lam, code trong tap tin nay chi la vi du ve 1 trong nhung cach lam de sinh vien tham khao
+		const IMAGE_PATHS = [];
+		IMAGE_PATHS[0] = "/img/hp.jpg";
+		IMAGE_PATHS[1] = "/img/dell.jpg";
+		IMAGE_PATHS[2] = "/img/acer.jpg";
+		IMAGE_PATHS[3] = "/img/asus.jpg";
+
+		const imgTag = document.querySelector('#laptopImg');
+
+		let currentSlide = 0;
+
+		let timer = setInterval(nextSlide, 2000);
+
+		function previousSlide() {
+			currentSlide = (currentSlide - 1 + IMAGE_PATHS.length) % IMAGE_PATHS.length;
+			setImage(currentSlide);
+		}
+
+		function nextSlide() {
+			currentSlide = (currentSlide + 1) % IMAGE_PATHS.length;
+			setImage(currentSlide);
+		}
+
+		function selectSlide(index) {
+			currentSlide = index;
+			setImage(currentSlide);
+		}
+
+		function setImage(index) {
+			imgTag.setAttribute('src', IMAGE_PATHS[currentSlide]);
+		}
+
+		function pauseTimer() {
+			clearInterval(timer);
+		}
+
+		function activateTimer() {
+			timer = setInterval(nextSlide, 2000);
+		}
+	</script>
+</body>
+
+</html>

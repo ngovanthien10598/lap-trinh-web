@@ -1,0 +1,24 @@
+.thongtincanhan {
+  border: 1px solid #ccc;
+}
+
+.thongtincanhan .avatar {
+  max-width: 100px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.thongtincanhan table {
+  width: 300px;
+  margin: 30px auto;
+}
+
+.thongtincanhan th,
+.thongtincanhan td {
+  border: 1px solid #ddd;
+}
+
+.thongtincanhan .text-center {
+  text-align: center;
+}

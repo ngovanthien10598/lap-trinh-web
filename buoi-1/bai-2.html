@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Web meta data -->
+  <meta name="description" content="Hello, I am Ngo Van Thien - a front-end developer using ReactJS.">
+  <meta name="author" content="Ngo Van Thien">
+  <meta name="keywords" content="Ngo Van Thien, Ngo Van Thien's profile, Ngô Văn Thiện">
+  <!-- Open Graph data -->
+  <meta property="og:title" content="Bài tập 1" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="http://thienb1607030.000webhostapp.com/buoi-1/bai-1.html" />
+  <meta property="og:image" content="http://thienb1607030.000webhostapp.com/img/avatar.jpg" />
+  <meta property="og:description" content="Hello, I am Ngo Van Thien - a front-end developer using ReactJS." />
+  <link rel="stylesheet" href="/css/exercise-layout.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lora:400i&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-146875830-1"></script>
+  <title>Bài tập 2</title>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-146875830-1');
+  </script>
+</head>
+
+<body>
+  <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous"
+    src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v4.0"></script>
+  <div class="loading" id="loading">
+    <div class="sk-folding-cube">
+      <div class="sk-cube1 sk-cube"></div>
+      <div class="sk-cube2 sk-cube"></div>
+      <div class="sk-cube4 sk-cube"></div>
+      <div class="sk-cube3 sk-cube"></div>
+    </div>
+    <p>Please wait a few seconds, I am loading...</p>
+  </div>
+
+  <nav class="navigation" id="navbar">
+    <div class="container">
+      <a id="brand" href="/#exercises" target="_self">
+        <img src="/img/brand.png" alt="Ngo Van Thien" title="Trang chủ">
+      </a>
+      <div class="right">
+        <h1>Bài tập thực hành web</h1>
+        <small>Ngô Văn Thiện B1607030</small>
+      </div>
+    </div>
+  </nav>
+
+  <main class="main">
+    <section class="section" id="exercises" data-aos="fade" data-aos-duration="1000">
+      <div class="container">
+        <h1 class="section-title">Danh sách bài tập</h1>
+        <p>Link bài tập: <a href="http://ct428.000webhostapp.com/">http://ct428.000webhostapp.com/</a></p>
+
+        <ol class="practice-list">
+          <li>HTML
+            <ol class="lession-list">
+              <li><a href="/buoi-1/bai-1.html">Tạo thời khóa biểu</a></li>
+              <li><a href="/buoi-1/bai-2.html">Tạo form đăng ký</a></li>
+            </ol>
+          </li>
+          <li>CSS</li>
+          <li>PHP</li>
+          <li>Javascript</li>
+          <li>Ajax</li>
+        </ol>
+      </div>
+    </section>
+
+
+    <section class="section">
+      <div class="container">
+        <h1 class="section-title">Buổi 1 - Bài 2</h1>
+        <form>
+          <h3 style="text-align: center;  color: #ca0d0d">Đăng ký tài khoản mới</h3>
+          <p style="text-align: center">Vui lòng điền đầy đủ thông tin bên dưới để đăng ký tài khoản mới</p>
+          <table style="width: 450px; border: 1px solid #777; padding: 10px; margin: auto">
+            <tr>
+              <td>
+                <label for="username">Tên đăng nhập</label>
+              </td>
+              <td>
+                <input type="text" name="username" id="username" spellcheck="false">
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <label for="password">Mật khẩu</label>
+              </td>
+              <td>
+                <input type="password" name="password" id="password" spellcheck="false">
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <label for="verify-password">Gõ lại mật khẩu</label>
+              </td>
+              <td>
+                <input type="password" name="verifyPassword" id="verify-password" spellcheck="false">
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <label for="avatar">Hình đại diện</label>
+              </td>
+              <td>
+                <input type="file" name="avatarFile" id="avatar-file">
+              </td>
+            </tr>
+
+            <tr>
+              <td>Giới tính</td>
+              <td>
+                <label>
+                  <input type="radio" name="gender" id="male">
+                  Nam
+                </label>
+                <label>
+                  <input type="radio" name="gender" id="female">
+                  Nữ
+                </label>
+                <label>
+                  <input type="radio" name="gender" id="other">
+                  Khác
+                </label>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <label for="job">Nghề nghiệp</label>
+              </td>
+              <td>
+                <select name="job" id="job">
+                  <option value="hoc-sinh">Học sinh</option>
+                  <option value="sinh-vien">Sinh viên</option>
+                  <option value="giao-vien">Giáo viên</option>
+                  <option value="khac">Khác</option>
+                </select>
+              </td>
+            </tr>
+
+            <tr>
+              <td>Sở thích</td>
+              <td>
+                <label>
+                  <input type="checkbox" name="hobby" id="sport">
+                  Thể thao
+                </label>
+                <label>
+                  <input type="checkbox" name="hobby" id="travel">
+                  Du lịch
+                </label>
+                <br />
+                <label>
+                  <input type="checkbox" name="hobby" id="music">
+                  Âm nhạc
+                </label>
+                <label>
+                  <input type="checkbox" name="hobby" id="fashion">
+                  Thời trang
+                </label>
+              </td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>
+                <input type="submit" value="Đăng ký">
+                <input type="reset" value="Làm lại">
+              </td>
+            </tr>
+          </table>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <span>Copyright &copy; 2019 Ngo Van Thien</span>
+      <div class="validators">
+        <a href="https://validator.w3.org/check?uri=referer" target="_blank">
+          <img src="http://www.w3.org/Icons/valid-xhtml10" alt="Valid XHTML 1.0!" height="31" width="88" />
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <a id="scroll-top" class="scroll-top" href="#" target="_self">
+    <img src="/img/arrow-up-solid.svg" width="20" alt="arrow up" title="Scroll to top">
+  </a>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="/js/exercise-navbar.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('#loading').fadeOut();
+    })
+  </script>
+</body>
+
+</html>

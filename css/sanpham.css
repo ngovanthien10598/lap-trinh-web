@@ -1,0 +1,11 @@
+.sanpham img {
+  max-width: 200px;
+}
+
+.sanpham table {
+  text-align: left;
+}
+
+.sanpham td:not(:first-child) {
+  width: 100%;
+}

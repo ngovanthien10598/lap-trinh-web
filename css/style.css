@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(18, 103, 214);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 5px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 100px auto;
+  border: 1px solid #ccc;
+}
+
+.wrapper .container {
+  border: none;
+}
+
+.navbar-menu {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  height: 40px;
+}
+
+.navbar-menu li {
+  flex-grow: 1;
+  display: block;
+
+}
+
+.navbar-menu li:not(:last-child) {
+  border-right: 1px solid #ccc;
+}
+
+.navbar-link {
+  display: block;
+  border-bottom: 1px solid #ccc;
+  line-height: 40px;
+  text-align: center;
+  text-decoration: none !important;
+  text-transform: uppercase;
+}
+
+.navbar-link:hover:not(.active) {
+  background-color: rgb(84, 158, 255);
+  color: #fff;
+}
+
+
+.navbar-link.active {
+  background-color: rgb(18, 103, 214);
+  color: #fff;
+}
+
+.form {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 30px;
+  max-width: 500px;
+  margin: auto;
+}
+
+.form-title {
+  font-size: 20px;
+  font-weight: 400;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+}
+
+
+
+.form-control {
+  display: block;
+  width: 100%;
+  outline: none;
+  padding: 6px 8px;
+  border: 1px solid #ddd;
+  border-radius: 2px;
+  transition: border-color .15s ease-out;
+  font-family: inherit;
+  resize: vertical;
+}
+
+.form-control:focus {
+  border-color: rgb(84, 158, 255);
+}
+
+.button {
+  outline: none;
+  background-color: rgb(84, 158, 255);
+  color: #fff;
+  padding: 8px 12px;
+  border: none;
+  cursor: pointer;
+  margin-right: 5px;
+  transition: background-color .15s ease-out;
+}
+
+.button:hover {
+  background-color: rgb(18, 103, 214);
+}
+
+.message {
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+.message.error {
+  color: #ff0080;
+}
+
+.message.success {
+  color: #12bd59;
+}
+
+td {
+  vertical-align: top;
+}
+
+.form-error {
+  display: none;
+}
+
+tr.error .form-error {
+  color: #ff0000;
+  display: block;
+}
+
+tr.error .form-control {
+  border-color: #ff0000;
+}

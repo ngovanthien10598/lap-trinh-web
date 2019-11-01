@@ -1,0 +1,22 @@
+.dssp table {
+  text-align: left;
+  width: 80%;
+  margin: 30px auto;
+}
+
+.dssp th,
+.dssp td {
+  border: 1px solid #ccc;
+}
+
+.dssp .action {
+  display: inline-block;
+  text-decoration: none;
+  background-color: #fff;
+  color: #333;
+  font-size: inherit;
+}
+
+.dssp .action:hover {
+  background-color: #ccc;
+}

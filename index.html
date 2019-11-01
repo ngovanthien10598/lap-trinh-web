@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="theme-color" content="#4aaeff">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Hello, I am Ngo Van Thien - a front-end developer using ReactJS.">
+  <meta name="author" content="Ngo Van Thien">
+  <meta name="keywords" content="Ngo Van Thien, Ngo Van Thien's profile, Ngô Văn Thiện">
+  <!-- Open Graph data -->
+  <meta property="og:title" content="Ngo Van Thien's profile" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="http://thienb1607030.000webhostapp.com/" />
+  <meta property="og:image" content="http://thienb1607030.000webhostapp.com/img/avatar.jpg" />
+  <meta property="og:description" content="Hello, I am Ngo Van Thien - a front-end developer using ReactJS." />
+  <link rel="stylesheet" href="/css/index.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lora:400i&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-146875830-1"></script>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <base target="_blank" />
+  <title>Ngo Van Thien</title>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-146875830-1');
+  </script>
+</head>
+
+<body>
+  <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous"
+    src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v4.0"></script>
+  <div class="loading" id="loading">
+    <div class="sk-folding-cube">
+      <div class="sk-cube1 sk-cube"></div>
+      <div class="sk-cube2 sk-cube"></div>
+      <div class="sk-cube4 sk-cube"></div>
+      <div class="sk-cube3 sk-cube"></div>
+    </div>
+    <p>Please wait a few seconds, I am loading...</p>
+  </div>
+
+  <nav class="navigation" id="navbar">
+    <div class="container">
+      <a id="brand" href="/" target="_self">
+        <img src="/img/brand.png" alt="Ngo Van Thien" title="Home page">
+      </a>
+      <ul class="menu" id="menu">
+        <!-- About -->
+        <li class="menu-item">
+          <a class="menu-item-link" href="#about" target="_self" title="About me">ABOUT</a>
+        </li>
+        <!-- Skills -->
+        <li class="menu-item">
+          <a class="menu-item-link" href="#skills" target="_self" title="My skills">SKILLS</a>
+        </li>
+        <!-- Exercises -->
+        <li class="menu-item">
+          <a class="menu-item-link" href="#exercises" target="_self" title="Exercises">EXERCISES</a>
+        </li>
+        <!-- Contact -->
+        <li class="menu-item">
+          <a class="menu-item-link" href="#contact" target="_self" title="Contact me">CONTACT</a>
+        </li>
+      </ul>
+      <button id="hamburger" class="hamburger">&equiv;</button>
+    </div>
+  </nav>
+  <!-- <div style="height: 70px"></div> -->
+  <header class="header" id="home">
+    <div class="container">
+      <h1>Web programming (CT428)</h1>
+      <h2>Ngo Van Thien - B1607030</h2>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="section" id="about">
+      <div class="container">
+        <a data-aos="fade" data-aos-duration="1000" class="avatar" href="https://facebook.com/nvthien1051998">
+          <img width="250" src="/img/avatar.jpg" alt="Ngo Van Thien">
+          <div class="back">Go to my facebook profile</div>
+        </a>
+        <div data-aos="fade" data-aos-duration="1000" class="info">
+          <h2 class="section-title"><a href="#about" target="_self">About me</a></h2>
+          <ul>
+            <li>Fullname: Ngo Van Thien</li>
+            <li>Student ID: B1607030</li>
+            <li>Major: Information technology</li>
+            <li>Web programming group: Thursday morning</li>
+          </ul>
+          <blockquote class="blockquote">
+            <p>Hello, my name is Thien, now I am a fourth-year student in Information technology.</p>
+            <p>I am a front-end developer, my future plan is becoming a fullstack developer with MERN stack (MongoDB -
+              Express - ReactJS - NodeJS). I also want to build cross-platform mobile applications with ReactNative.</p>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="skills" data-aos="fade">
+      <div class="container">
+        <h2 class="section-title"><a href="#skills" target="_self">My skills</a></h2>
+
+        <table class="table">
+          <!-- HTML -->
+          <tr data-aos="fade-up" data-aos-duration="1000">
+            <td>
+              <a href="https://www.w3.org/html/">
+                <img src="/img/logo-html-5.svg" alt="HTML" title="HTML" width="60">
+              </a>
+            </td>
+            <td>
+              <p><b>HTML</b></p>
+              <p>HyperText Markup Language (HTML) is used in the creation of web pages and other types of documents
+                viewable in a browser.</p>
+              <p>Learning resources:</p>
+              <ul>
+                <li><a href="https://www.w3schools.com/html/default.asp">W3schools</a></li>
+                <li><a href="https://developer.mozilla.org/vi/docs/Learn/HTML">Mozilla Developer Network (MDN)</a></li>
+                <li><a href="https://www.tutorialspoint.com/html/index.htm">Tutorialspoint</a></li>
+              </ul>
+            </td>
+          </tr>
+          <!-- CSS -->
+          <tr data-aos="fade-up" data-aos-duration="1000">
+            <td>
+              <a href="https://www.w3.org/Style/CSS/">
+                <img src="/img/logo-css-3.svg" alt="CSS" title="CSS" width="60">
+              </a>
+            </td>
+            <td>
+              <p><b>CSS</b></p>
+              <p>Cascading Style Sheets (CSS) is a stylesheet language used to describe the presentation of a document
+                written in HTML or XML (including XML dialects such as SVG, MathML or XHTML). CSS describes how elements
+                should be rendered on screen, on paper, in speech, or on other media.</p>
+              <p>Learning resources:</p>
+              <ul>
+                <li><a href="https://www.w3schools.com/css/default.asp">W3schools</a></li>
+                <li><a href="https://developer.mozilla.org/vi/docs/Learn/CSS">Mozilla Developer Network (MDN)</a></li>
+                <li><a href="https://www.tutorialspoint.com/css/index.htm">Tutorialspoint</a></li>
+              </ul><!--  -->
+            </td>
+          </tr>
+          <!-- JS -->
+          <tr data-aos="fade-up" data-aos-duration="1000">
+            <td>
+              <a href="https://www.javascript.com/">
+                <img src="/img/logo-javascript.svg" alt="Javascript" title="Javascript" width="60">
+              </a>
+            </td>
+            <td>
+              <p><b>Javascript</b></p>
+              <p>JavaScript (JS) is a programming language mostly used to dynamically script webpages on the client
+                side, but it is also often utilized on the server-side, using packages such as Node.js.</p>
+              <p>Learning resources:</p>
+              <ul>
+                <li><a href="https://www.w3schools.com/js/default.asp">W3schools</a></li>
+                <li><a href="https://developer.mozilla.org/vi/docs/Learn/JavaScript">Mozilla Developer Network (MDN)</a>
+                </li>
+                <li><a href="https://www.tutorialspoint.com/javascript/index.htm">Tutorialspoint</a></li>
+              </ul>
+            </td>
+          </tr>
+          <!-- jQuery -->
+          <tr data-aos="fade-up" data-aos-duration="1000">
+            <td>
+              <a href="https://jquery.com/">
+                <img src="/img/logo-jquery.svg" alt="jQuery" title="jQuery" width="60">
+              </a>
+            </td>
+            <td>
+              <p><b>jQuery</b></p>
+              <p>jQuery is a fast, small, and feature-rich JavaScript library. It makes things like HTML document
+                traversal and manipulation, event handling, animation, and Ajax much simpler with an easy-to-use API
+                that works across a multitude of browsers. With a combination of versatility and extensibility, jQuery
+                has changed the way that millions of people write JavaScript.</p>
+              <p>Learning resources:</p>
+              <ul>
+                <li><a href="https://api.jquery.com/">jQuery documentation</a></li>
+                <li><a href="https://www.w3schools.com/jquery/default.asp">W3schools</a></li>
+                <li><a href="https://www.tutorialspoint.com/jquery/index.htm">Tutorialspoint</a></li>
+              </ul>
+            </td>
+          </tr>
+          <!-- BOOTSTRAP -->
+          <tr data-aos="fade-up" data-aos-duration="1000">
+            <td>
+              <a href="https://getbootstrap.com/">
+                <img src="/img/logo-bootstrap.svg" alt="Bootstrap" title="Bootstrap" width="60">
+              </a>
+            </td>
+            <td>
+              <p><b>Bootstrap</b></p>
+              <p>Bootstrap is an open source toolkit for developing with HTML, CSS, and JS. Build responsive,
+                mobile-first projects on the web with the world’s most popular front-end component library.</p>
+              <p>Learning resources:</p>
+              <ul>
+                <li><a href="https://getbootstrap.com/">Bootstrap homepage</a></li>
+                <li><a href="https://www.w3schools.com/bootstrap4/default.asp">W3schools</a></li>
+              </ul>
+            </td>
+          </tr>
+          <!-- NODEJS -->
+          <tr data-aos="fade-up" data-aos-duration="1000">
+            <td>
+              <a href="https://nodejs.org">
+                <img src="/img/logo-nodejs.svg" alt="Node.js" title="Node.js" width="60">
+              </a>
+            </td>
+            <td>
+              <p><b>Node.js</b></p>
+              <p>Node.js is an open-source, cross-platform, JavaScript run-time environment that executes JavaScript
+                code outside of a browser. Node.js lets developers use JavaScript to write command line tools and for
+                server-side scripting—running scripts server-side to produce dynamic web page content before the page is
+                sent to the user's web browser.</p>
+              <p>Learning resources:</p>
+              <ul>
+                <li><a href="https://nodejs.org/">Node.js homepage</a></li>
+                <li><a href="https://www.w3schools.com/nodejs/default.asp">W3schools</a></li>
+              </ul>
+            </td>
+          </tr>
+          <!-- ANGULAR -->
+          <tr data-aos="fade-up" data-aos-duration="1000">
+            <td>
+              <a href="https://angular.io">
+                <img src="/img/logo-angular.svg" alt="Angular" title="Angular" width="60">
+              </a>
+            </td>
+            <td>
+              <p><b>Angular</b></p>
+              <p>Angular is a platform for building mobile and desktop web applications.
+                Join the community of millions of developers who build compelling user interfaces with Angular.</p>
+              <p>Learning resources:</p>
+              <ul>
+                <li><a href="https://angular.io/">Angular homepage</a></li>
+                <li><a href="https://www.tutorialspoint.com/angular7/index.htm">Tutorialspoint</a></li>
+              </ul>
+            </td>
+          </tr>
+          <!-- VUEJS -->
+          <tr data-aos="fade-up" data-aos-duration="1000">
+            <td>
+              <a href="https://vuejs.org">
+                <img src="/img/logo-vuejs.svg" alt="Vue.js" title="Vue.js" width="60">
+              </a>
+            </td>
+            <td>
+              <p><b>Vue.js</b></p>
+              <p>Vue is a progressive framework for building user interfaces. The core library is focused on the view
+                layer only, and is easy to pick up and integrate with other libraries or existing projects.</p>
+              <p>Learning resources:</p>
+              <ul>
+                <li><a href="https://vuejs.org/">Vue.js homepage</a></li>
+                <li><a href="https://www.tutorialspoint.com/vuejs/index.htm">Tutorialspoint</a></li>
+              </ul>
+            </td>
+          </tr>
+          <!-- REACT -->
+          <tr data-aos="fade-up" data-aos-duration="1000">
+            <td>
+              <a href="https://reactjs.org">
+                <img src="/img/logo-react.svg" alt="React.js" title="React.js" width="60">
+              </a>
+            </td>
+            <td>
+              <p><b>React</b></p>
+              <p>React is a JavaScript library for building user interfaces</p>
+              <p>Learning resources:</p>
+              <ul>
+                <li><a href="https://reactjs.org/">React.js homepage</a></li>
+                <li><a href="https://www.tutorialspoint.com/reactjs/index.htm">Tutorialspoint</a></li>
+              </ul>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </section>
+
+    <section class="section" id="exercises" data-aos="fade" data-aos-duration="1000">
+      <div class="container">
+        <h2 class="section-title"><a href="#exercises" target="_self">Exercises</a></h2>
+
+        <p><b>Teacher: Nguyen Cao Hong Ngoc</b></p>
+        <p>Exercises link: <a href="http://ct428.000webhostapp.com/">http://ct428.000webhostapp.com/</a></p>
+
+        <ol class="practice-list">
+          <li>HTML
+            <ol class="lession-list">
+              <li><a href="/buoi-1/bai-1.html">Create schedule</a></li>
+              <li><a href="/dang-ky.php">Create sign up form</a></li>
+            </ol>
+          </li>
+          <li>CSS
+            <ol class="lession-list">
+              <li><a href="/buoi-2/bai-1.html">Add CSS for schedule</a></li>
+              <li><a href="/buoi-2/bai-2.html">Left menu</a></li>
+              <li><a href="/buoi-2/bai-3.html">Dropdown menu</a></li>
+            </ol>
+          </li>
+          <li>PHP
+            <ol class="lession-list">
+              <li><a href="/dang-nhap.php">Login</a></li>
+              <li><a href="/dang-ky.php">Sign up</a></li>
+            </ol>
+          </li>
+          <li>Javascript
+            <ol class="lession-list">
+              <li><a href="/dang-ky.php">Sign up form (with validation)</a></li>
+              <li><a href="/buoi-4/bai-2">Slide show</a></li>
+              <li><a href="/buoi-4/bai-3">Slide show (autoplay)</a></li>
+              <li><a href="/buoi-4/bai-4">Slide show (from database)</a></li>
+            </ol>
+          </li>
+          <li>Ajax</li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section" id="contact" data-aos="fade" data-aos-duration="1000">
+      <div class="container">
+        <h2 class="section-title"><a href="#contact" target="_self">Contact me</a></h2>
+        <p><b>My contact information:</b></p>
+        <ul>
+          <li>
+            <img src="/img/gmail-icon.svg" alt="Email" width="25">
+            <a href="mailto:thienyl6716@gmail.com" target="_self">thienyl6716@gmail.com</a>
+          </li>
+          <li>
+            <img src="/img/facebook-tile.svg" alt="Facebook" width="25">
+            <a href="https://www.facebook.com/nvthien1051998">Ngô Văn Thiện</a></li>
+          <li>
+            <img src="/img/smart-phone.svg" alt="Phone" width="25">
+            <a href="tel:0397202245" target="_self">0397 202 245</a>
+          </li>
+          <li>
+            <img src="/img/globe-with-meridians.svg" alt="Website" width="25">
+            <a href="https://nvthien.tk">nvthien.tk</a></li>
+          <li>
+            <img src="/img/github.svg" alt="Github" width="25">
+            <a href="https://github.com/ngovthien">ngovthien</a></li>
+        </ul>
+        <p>If you want to send me some messages, please fill in the form below.</p>
+
+        <form class="form" onsubmit="return submitForm(event)">
+          <div class="row">
+            <label class="label" for="email">Your email address</label>
+            <input class="form-control" type="text" name="email" id="email" spellcheck="false"
+              placeholder="example@gmail.com">
+          </div>
+
+          <div class="row">
+            <label class="label" for="message">Your message</label>
+            <textarea class="form-control" name="message" id="message" placeholder="What do you want to tell me?"
+              rows="3"></textarea>
+          </div>
+
+          <div class="row">
+            <input type="submit" class="submit" value="Send">
+          </div>
+
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <div class="container" id="comment">
+    <hr>
+    <div class="fb-comments" data-href="http://thienb1607030.000webhostapp.com/" data-width="100%" data-numposts="5"></div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <span>Copyright &copy; 2019 Ngo Van Thien</span>
+      <div class="validators">
+        <a href="https://validator.w3.org/check?uri=referer">
+          <img src="http://www.w3.org/Icons/valid-xhtml10" alt="Valid XHTML 1.0!" height="31" width="88" />
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <a id="scroll-top" class="scroll-top" href="#home" target="_self">
+    <img src="/img/arrow-up-solid.svg" width="20" alt="arrow up" title="Scroll to top">
+  </a>
+
+  <script>
+    function submitForm(event) {
+      alert('Hi there, thanks for contacting me. This form is used for testing only.');
+      return false;
+    }
+  </script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="/js/navbar.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('#loading').fadeOut();
+      AOS.init();
+    })
+  </script>
+</body>
+
+</html>

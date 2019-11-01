@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title> Lập trình web (CT428) </title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<link rel="stylesheet" type="text/css" href="/buoi-4/bai-2/style.css" media="screen" />
+</head>
+
+<body onload="enableButtons()">
+	<div id="wrap">
+		<div id="title">
+			<h1 class="title">Bài 2 - Buổi 4</h1>
+		</div>
+		<!--end div title-->
+		<!--end div menu-->
+		<div id="content">
+			<!--Nội dung trang web-->
+			<h1 class="sub-heading">Slide show</h1>
+
+			<form>
+				<img id="laptopImg" class="laptop-img" src="/img/hp.jpg" height="300" width="300" />
+				<!-- Preload (for performance) -->
+				<img src="/img/dell.jpg" hidden alt="">
+				<img src="/img/acer.jpg" hidden alt="">
+				<img src="/img/asus.jpg" hidden alt="">
+				<br />
+				<div class="controls">
+					<button type="button" class="button" onclick="previousSlide()" disabled>&lt;</button>
+					<button type="button" class="button" onclick="nextSlide()" disabled>&gt;</button>
+				</div>
+				<br />
+				<select name="laptopSel" class="laptop-select" id="laptop-select" onchange="selectSlide(value)">
+					<option value="0">HP</option>
+					<option value="1">Dell</option>
+					<option value="2">Acer</option>
+					<option value="3">Asus</option>
+				</select>
+			</form>
+			<div class="requirement">
+				<p>Yêu cầu:<br />
+					Có 4 hình ảnh về máy tính đính kèm, mặc định hiển thị hình máy HP.<br />
+					<ul>
+						<li>Khi người dùng nhấn Next thì hiển thị hình tiếp theo (theo thứ tự Hp -> Dell -> Acer -> Asus).</li>
+						<li>Khi người dùng nhấp Previous thì hiển thị hình trước đó.</li>
+						<li>Cả nút Next và Previous đều hiển thị vòng tròn (nếu đang xem hình HP mà nhấn Previous thì sẽ chuyển sang
+							hình Asus).</li>
+						<li>Người dùng có thể chọn xem một hình nào đó từ danh sách bên dưới nút Previous và Next.</li>
+						<li>Khi người dùng thay đổi hình bằng cách nhấn Previous hoặc Next thì tên hiển thị bên dưới cũng thay đổi
+							theo.</li>
+					</ul>
+				</p>
+			</div>
+		</div>
+		<!--end div content-->
+		<div id="footer">
+			<p>Họ tên SV: Ngô Văn Thiện<br /> Email: thienb1607030@student.ctu.edu.vn</p>
+			<p><a href="/">Về trang chủ</a></p>
+		</div>
+		<!--end div footer-->
+	</div>
+	<!--end div wrap-->
+
+	<script>
+		// bai tap co nhieu cach lam, code trong tap tin nay chi la vi du ve 1 trong nhung cach lam de sinh vien tham khao
+		const IMAGE_PATHS = [];
+		IMAGE_PATHS[0] = "/img/hp.jpg";
+		IMAGE_PATHS[1] = "/img/dell.jpg";
+		IMAGE_PATHS[2] = "/img/acer.jpg";
+		IMAGE_PATHS[3] = "/img/asus.jpg";
+
+		const imgTag = document.querySelector('#laptopImg');
+		const laptopSelect = document.querySelector('#laptop-select');
+
+		let currentSlide = 0;
+
+		function previousSlide() {
+			currentSlide = (currentSlide - 1 + IMAGE_PATHS.length) % IMAGE_PATHS.length;
+			setImage(currentSlide);
+			selectIndex(currentSlide);
+		}
+
+		function nextSlide() {
+			currentSlide = (currentSlide + 1) % IMAGE_PATHS.length;
+			setImage(currentSlide);
+			selectIndex(currentSlide);
+		}
+
+		function selectSlide(index) {
+			currentSlide = index;
+			setImage(currentSlide);
+		}
+
+		function setImage(index) {
+			imgTag.setAttribute('src', IMAGE_PATHS[currentSlide]);
+		}
+
+		function selectIndex(index) {
+			laptopSelect.selectedIndex = index;
+		}
+
+		function enableButtons() {
+			const buttons = document.querySelectorAll(".button");
+			buttons.forEach(button => {
+				button.removeAttribute('disabled');
+			})
+		}
+	</script>
+</body>
+
+</html>

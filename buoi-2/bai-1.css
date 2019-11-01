@@ -1,0 +1,17 @@
+th, td {
+  padding: 4px 12px;
+}
+
+th {
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+th:hover {
+  background-color: #ff0000;
+  color: #fff;
+}
+
+td:hover {
+  background-color: #eee;
+}
